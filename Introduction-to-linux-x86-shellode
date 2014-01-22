@@ -22,7 +22,7 @@ Contact: posidron@tripbit.org			 	  http://www.tripbit.org
 ================================================================================
 # setuid(0); - set user id                                                     #
 ================================================================================
-# %eax	Name		Source		%ebx	%ecx	%edx	%esx	%edi   #
+# %eax	Name		Source		%ebx%ecx%edx%esx%edi   #
 # 23 	sys_setgid 	kernel/sys.c 	gid_t 	- 	- 	- 	-      #
 --------------------------------------------------------------------------------
 # xor	%ebx,  %ebx   # argument 1, set ebx register to 0 (user_id)            #
