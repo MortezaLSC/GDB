@@ -37,9 +37,9 @@ Contact: posidron@tripbit.org			 	  http://www.tripbit.org
 # %eax	Name		Source		%ebx	%ecx	%edx	%esx	%edi   #
 # 46 	sys_setuid 	kernel/sys.c 	uid_t 	- 	- 	- 	-      #
 --------------------------------------------------------------------------------
-# xor	%ebx,  %ebx   # argument 1, set ebx register to 0 (group_id)           #
-# mov	$0x2E, %eax   # copy syscall(converted to hex) to eax register         #
-# int	$0x80	      # interupt to execute syscall                            #
+# xor	%ebx,  %ebx   # argument 1, set ebx register to 0 (group_id)      #
+# mov	$0x2E, %eax   # copy syscall(converted to hex) to eax register    #
+# int	$0x80	      # interupt to execute syscall                  #
 ================================================================================
 
 
