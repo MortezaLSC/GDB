@@ -8,9 +8,9 @@ Contact: posidron@tripbit.org			 	  http://www.tripbit.org
 
 
 ================================================================================
-# Environment								  #
+# Environment								       #
 --------------------------------------------------------------------------------
-# System   : Linux 2.4.20-8						    #
+# System   : Linux 2.4.20-8						       #
 # Programms: gcc 3.2.2, gdb 5.3post-0.20021129.18rh, strace 4.4                #
 ================================================================================
 
@@ -22,7 +22,7 @@ Contact: posidron@tripbit.org			 	  http://www.tripbit.org
 ================================================================================
 # setuid(0); - set user id                                                     #
 ================================================================================
-# %eax	Name		Source		%ebx%ecx%edx%esx%edi   #
+# %eax	Name		Source		%ebx	%ecx	%edx	%esx	%edi   #
 # 23 	sys_setgid 	kernel/sys.c 	gid_t 	- 	- 	- 	-      #
 --------------------------------------------------------------------------------
 # xor	%ebx,  %ebx   # argument 1, set ebx register to 0 (user_id)            #
@@ -429,7 +429,7 @@ exit
 #define MAX_SIZE 128
 
 int main(int argc, char **argv)
-{
+{
 	char cmd[MAX_SIZE];
 	
 	if(!(argc > 1)) 
